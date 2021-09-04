@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .one {
+            border-right: 0;
+        }
+
+        .two {
+            border-top: 0;
+            border-bottom: 0;
+        }
+
+        td {
+            border: 1px solid;
+            font-size: 20px;
+            width: 450px;
+            height: 40px;
+            text-align: center;
+            background-color: blanchedalmond;
+        }
+
+
+        div {
+            text-align: center;
+        }
+
+        .text {
+            display: flex;
+            justify-content: center;
+        }
+
+        .submit {
+            font-size: 20px;
+            width: 70px;
+            height: 40px;
+            font-weight: 700;
+            background-color: rgb(43, 122, 226);
+            color: white;
+            border: 0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        <h1>维护状态管理</h1>
+    </div>
+    <br><br><br>
+    <form action="/admin/manger/douphold" method="POST">
+        <table align=center cellspacing="0">
+            <tr>
+                <td class="one">用户</td>
+                <td>维护状态</td>
+            </tr>
+            <tr>
+                <td class="one two">学生</td>
+                <td class="two">
+                    {% if stu == "0"%}
+                    <input type="radio" name="studentAccess" value="0" checked>维护禁止登陆
+                    <input type="radio" name="studentAccess" value="1">正常登录
+                    {% else %}
+                    <input type="radio" name="studentAccess" value="0">维护禁止登陆
+                    <input type="radio" name="studentAccess" value="1" checked>正常登录
+                    {% endif %}
+                </td>
+            </tr>
+            <tr class="one">
+                <td class="one">老师</td>
+                <td>
+                    {%if te =="0"%}
+                    <input type="radio" name="teacherAccess" value="0" checked>维护禁止登陆
+                    <input type="radio" name="teacherAccess" value="1">正常登录
+                    {%else%}
+                    <input type="radio" name="teacherAccess" value="0">维护禁止登陆
+                    <input type="radio" name="teacherAccess" value="1" checked>正常登录
+                    {%endif%}
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <div>
+            <input type="submit" value="提交" class="submit">
+        </div>
+    </form>
+</body>
+
+</html>

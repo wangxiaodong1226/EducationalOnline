@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>头像</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+            <th>级别</th>
+            <th>简介</th>
+             <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="{{url}}" alt="" width="200px">
+            </td>
+            <td>{{info.te_name}}</td>
+            <td>{{info.te_age}}</td>
+            <td>{{info.te_sex}}</td>
+            <td>{{info.te_level}}</td>
+            <td>{{info.te_intr}}</td>
+            <td><a href="/admin/teacher/modify?te_id={{info._id}}">修改</a></td>
+          
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>

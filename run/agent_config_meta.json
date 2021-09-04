@@ -1,0 +1,302 @@
+{
+  "keys": "C:\\Users\\Yandong\\Desktop\\checkClass\\config\\config.default.js",
+  "view": {
+    "defaultViewEngine": "C:\\Users\\Yandong\\Desktop\\checkClass\\config\\config.default.js",
+    "mapping": {
+      ".html": "C:\\Users\\Yandong\\Desktop\\checkClass\\config\\config.default.js"
+    },
+    "root": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-view\\config\\config.default.js",
+    "cache": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-view\\config\\config.local.js",
+    "defaultExtension": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-view\\config\\config.default.js"
+  },
+  "security": {
+    "csrf": {
+      "queryName": "C:\\Users\\Yandong\\Desktop\\checkClass\\config\\config.default.js",
+      "bodyName": "C:\\Users\\Yandong\\Desktop\\checkClass\\config\\config.default.js",
+      "enable": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js",
+      "type": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js",
+      "ignoreJSON": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js",
+      "useSession": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js",
+      "cookieName": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js",
+      "sessionName": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js",
+      "headerName": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js",
+      "refererWhiteList": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "domainWhiteList": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js",
+    "protocolWhiteList": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js",
+    "xframe": {
+      "enable": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.local.js",
+      "maxAge": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js",
+      "includeSubdomains": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js",
+      "policy": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js",
+      "checkAddress": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js"
+    }
+  },
+  "mongoose": {
+    "client": {
+      "url": "C:\\Users\\Yandong\\Desktop\\checkClass\\config\\config.default.js",
+      "options": "C:\\Users\\Yandong\\Desktop\\checkClass\\config\\config.default.js"
+    },
+    "url": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-mongoose\\config\\config.default.js",
+    "options": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-mongoose\\config\\config.default.js",
+    "plugins": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-mongoose\\config\\config.default.js",
+    "loadModel": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-mongoose\\config\\config.default.js",
+    "app": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-mongoose\\config\\config.default.js",
+    "agent": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-mongoose\\config\\config.default.js"
+  },
+  "session": {
+    "key": "C:\\Users\\Yandong\\Desktop\\checkClass\\config\\config.default.js",
+    "maxAge": "C:\\Users\\Yandong\\Desktop\\checkClass\\config\\config.default.js",
+    "httpOnly": "C:\\Users\\Yandong\\Desktop\\checkClass\\config\\config.default.js",
+    "encrypt": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-session\\config\\config.default.js"
+  },
+  "middleware": "C:\\Users\\Yandong\\Desktop\\checkClass\\config\\config.default.js",
+  "upHold": {
+    "enable": "C:\\Users\\Yandong\\Desktop\\checkClass\\config\\config.default.js",
+    "match": "C:\\Users\\Yandong\\Desktop\\checkClass\\config\\config.default.js"
+  },
+  "multipart": {
+    "fileSize": "C:\\Users\\Yandong\\Desktop\\checkClass\\config\\config.default.js",
+    "mode": "C:\\Users\\Yandong\\Desktop\\checkClass\\config\\config.default.js",
+    "fileExtensions": "C:\\Users\\Yandong\\Desktop\\checkClass\\config\\config.default.js",
+    "autoFields": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-multipart\\config\\config.default.js",
+    "whitelist": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-multipart\\config\\config.default.js",
+    "tmpdir": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-multipart\\config\\config.default.js",
+    "cleanSchedule": {
+      "cron": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-multipart\\config\\config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-security\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "callback": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "csrf": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-jsonp\\config\\config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-onerror\\config\\config.default.js",
+    "templatePath": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-onerror\\config\\config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-i18n\\config\\config.default.js",
+    "dirs": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-i18n\\config\\config.default.js",
+    "queryField": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieField": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieDomain": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-i18n\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-watcher\\config\\config.local.js",
+    "eventSources": {
+      "default": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-watcher\\config\\config.default.js",
+      "development": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-watcher\\config\\config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-schedule\\config\\config.default.js",
+      "file": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-schedule\\config\\config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-schedule\\config\\config.default.js"
+  },
+  "development": {
+    "watchDirs": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-development\\config\\config.default.js",
+    "ignoreDirs": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-development\\config\\config.default.js",
+    "fastReady": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-development\\config\\config.default.js",
+    "reloadOnDebug": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideDefault": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideIgnore": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-development\\config\\config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFiles": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxDays": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-logrotator\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-static\\config\\config.default.js",
+    "dir": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-static\\config\\config.default.js",
+    "dynamic": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-static\\config\\config.default.js",
+    "preload": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-static\\config\\config.default.js",
+    "buffer": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-static\\config\\config.default.js"
+  },
+  "nunjucks": {
+    "autoescape": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "throwOnUndefined": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "trimBlocks": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "lstripBlocks": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "cache": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg-view-nunjucks\\config\\config.local.js"
+  },
+  "env": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+  "name": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+  "cookies": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+  "proxy": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+  "maxIpsCount": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+  "maxProxyCount": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+  "protocolHeaders": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+  "ipHeaders": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+  "hostHeaders": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+  "pkg": {
+    "name": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "version": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "description": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "main": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "scripts": {
+      "test": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "dev": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js"
+    },
+    "keywords": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "author": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "license": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "dependencies": {
+      "await-stream-ready": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "baidu-aip-sdk": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "dateformat": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "dayjs": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "egg": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "egg-mongoose": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "egg-view-nunjucks": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "jquery": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "md5": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "stream-wormhole": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "svg-captcha": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js"
+    },
+    "devDependencies": {
+      "egg-bin": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "baseDir": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+  "HOME": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+  "rundir": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+  "dump": {
+    "ignore": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "notFound": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "sitefile": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "middlewares": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "httpClient": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "formLimit": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "jsonLimit": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "textLimit": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "strict": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "depth": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "parameterLimit": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js"
+    },
+    "onerror": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js"
+  },
+  "logger": {
+    "dir": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "env": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "level": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "consoleLevel": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "outputJSON": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "appLogName": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "coreLogName": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "agentLogName": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "errorLogName": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "request": {
+      "timeout": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "logging": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js"
+  },
+  "coreMiddleware": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+  "workerStartTimeout": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+  "serverTimeout": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "port": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+      "hostname": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js",
+    "responseTimeout": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js"
+  },
+  "onClientError": "C:\\Users\\Yandong\\Desktop\\checkClass\\node_modules\\egg\\config\\config.default.js"
+}

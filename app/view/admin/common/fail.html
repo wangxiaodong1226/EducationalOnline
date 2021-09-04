@@ -1,0 +1,15 @@
+{% extends "./base.html" %}
+{% block header%}
+<!-- 自动刷新并指向新页面  -->
+  <meta http-equiv="Refresh" content="2;URL={{url}}">
+{% endblock %}
+   
+{% block content %}
+  <div class="container">
+    <div class="alert alert-danger" role="alert">
+        {{msg}}
+        {{url}}
+        <p>2秒之后 跳转页面</p>
+    </div>
+  </div>
+{% endblock %}

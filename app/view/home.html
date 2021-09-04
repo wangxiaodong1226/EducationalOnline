@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 静态资源 要以 /public/xxx 才可以访问到 相当于public套了一个public -->
+  <link rel="stylesheet" href="/public/admin/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/admin/css/base.css">
+  <script src="/public/admin/js/jquery-1.11.1.min.js"></script>
+  <script src="/public/admin/js/index.js"></script>
+  <style>
+    .logo {
+      position: relative;
+      top: -10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 头部 -->
+   <!-- nunjucks 模板引入 -->
+  {% include "./admin/common/header.html" %}
+
+  <!-- 菜单 + 内容 -->
+
+  <div class="row">
+    <div class="col-md-2">
+      {%include "./admin/common/aside.html"%}
+    </div>
+    <div class="col-md-10">
+        <iframe src="/admin/welcome" frameborder="0" name="iframeMain"></iframe>
+    </div>
+  </div>
+ 
+  <!-- 相当于 新窗口 与a标签 target 与 name  匹配 来显示请求的 页面 -->
+ 
+</body>
+
+</html>

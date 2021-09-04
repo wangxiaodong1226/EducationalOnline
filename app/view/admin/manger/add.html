@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li{
+            list-style: none
+        }
+    </style>
+</head>
+<body>
+    <form action="/admin/manger/doadd" method="post">
+        <ul>
+            <li><span>姓名:</span><input type="text" name="admin_name"></li>
+            <li><span>密码:</span><input type="password" name="admin_password"></li>
+            <li><span>年龄:</span><input type="text" name="admin_age"></li>
+            <li><span>性别:</span>
+                <input type="radio" name="admin_sex" value="1" id="_1"/>男
+                <input type="radio" name="admin_sex" value="0" id="_2"/>女
+            </li>
+            <li><span>简介:</span><textarea name="admin_intr" cols="30" rows="10"></textarea></li>
+        </ul>
+        <button>提交</button>
+    </form>
+</body>
+</html>

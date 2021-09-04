@@ -1,0 +1,19 @@
+{% extends "../common/base.html" %}
+
+
+{% block content %}
+  <div>
+    <table class="table table-striped">
+      <thead>
+        <th class="text-center" >公告内容</th>
+      </thead>
+      <tbody>
+        {% for item in stuanndata%}
+        <tr class="text-center">
+          <td>{{item.stuann_info}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

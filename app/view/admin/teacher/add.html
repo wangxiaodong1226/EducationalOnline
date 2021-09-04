@@ -1,0 +1,46 @@
+<!-- nunjucjs 模板继承  -->
+
+{% extends "../common/base.html" %}
+
+
+{%block header%}
+    <style>
+        li{
+            list-style: none;
+            margin:7px 5px;
+        }
+        button{
+            margin-left: 60px;
+        }
+        input{
+            margin-left:4px ;
+            outline: none;
+        }
+        span{
+       
+            text-align: right;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">添加教师</h3>
+    </div>
+    <div class="panel-body">
+        <form action="/admin/teacher/doadd" method="post">
+            <ul>
+                <li><span>姓名:</span><input type="text" name="te_name"></li>
+                <li><span>密码:</span><input type="password" name="te_password"></li>
+                <li><span>性别:</span><input type="text" name="te_sex"></li>
+                <li><span>年龄:</span><input type="text" name="te_age"></li>
+                <li><span>教师等级:</span><input type="text" name="te_level"></li>
+                <li><span>简介:</span><textarea name="te_intr" cols="30" rows="10"></textarea> </li>
+
+            </ul>
+            <button>提交</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

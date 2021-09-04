@@ -1,0 +1,43 @@
+{% extends "../common/base.html" %}
+{% block header%}
+<style>
+  input[type="submit"] {
+    display: block;
+    width: 50px;
+    margin: 5px auto;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">修改角色</h3>
+  </div>
+  <div class="panel-body">
+    <!-- {{role}} -->
+    <form action="/admin/teacher/doedit" method="post">
+      <input type="hidden" name="_id" value="{{stu._id}}">
+      
+      <span>头像</span>
+      <img src="{{url}}" alt="">
+      <span>名称</span>
+      <input type="text" name="stu_name" value="{{ stu.stu_name }}">
+      <br><br>
+      <span>年龄</span>
+      <input type="text" name="stu_age" value="{{ stu.stu_age }}">
+      <br><br>
+      <span>性别</span>
+      <input type="text" name="stu_sex" value="{{ stu.stu_sex }}">
+      <br><br>
+      <span>简介</span>
+      <textarea name="stu_intr" cols="30" rows="10">{{ stu.stu_intr }}</textarea>
+      <br><br>
+
+      <button>提交</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+form{
+    width:500px;
+    margin: 100px auto;  
+}
+input{
+    width: 200px;
+    margin: 10px auto 10px;
+}
+.code{
+    width: 100px;
+    float: left;
+}
+
+span{
+    width: 100px;
+    line-height: 40px;
+    float: left;
+   text-align: right;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+      .hiddenbox{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color:rgba(100, 100,100, 0.2);
+        width: 100%;
+        height: 100%;
+        display: none;
+        
+      }
+      form{
+        width: 340px;
+        height: 250px;
+        margin: 100px auto;
+        border: 1px solid ;
+        padding: 10px;
+        background-color: white;
+      }
+      form input{
+        width: 200px;
+        margin: 30px 5px 20px;
+      }
+      button{
+        display: block;
+        margin: 5px auto;
+      }
+      .hiddentd{
+        display: none;
+      }
+    </style>
+</head>
+ 
+<body>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>课程名</th>
+        <th>学生姓名</th>
+        <th>分数</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+     
+      {%for class in checkclassArr%}
+          {% for stuinfo in endResult %}
+      {%if class.class_name== stuinfo.class_name%}
+         <tr>
+        <td>{{stuinfo.class_name}}</td>
+        <td>{{stuinfo.stu_name}}</td>
+        <td>{{stuinfo.stu_point}}</td>
+        <td> <a href="{{stuinfo.stu_id}}">修改</a></td> 
+        <td class="hiddentd">{{stuinfo.class_id}}</td>
+      </tr>
+      {%endif%}
+       {% endfor %}
+      {%endfor%}
+    
+    </tbody>
+  </table>
+   
+    <div class="hiddenbox">
+     
+      <form action="/admin/teacher/dotext" method="POST">
+        <h5>修改成绩</h5>
+           <input type="hidden" name="stu_id">
+          <span>姓名:</span><input type="text" name="stu_name"><br>
+          <span>成绩:</span><input type="text" name="stu_point">
+          <input type="hidden" name="class_id" >
+         <button>更新</button>
+      </form>
+    </div>
+</body>
+<script>
+   var aTag = document.getElementsByTagName("a")
+   var inputArr = document.querySelectorAll("form input")
+   var box = document.querySelector(".hiddenbox")
+   var btn = document.querySelector("button")
+   var form = document.querySelector("form");
+   
+
+   [].slice.call(aTag).forEach(element => {
+     element.onclick = function (e) {
+     e.preventDefault();
+     box.style.display = "block"
+     var point = this.parentNode.previousElementSibling
+     var stu = this.parentNode.previousElementSibling.previousElementSibling
+     var td_id = this.parentNode.nextElementSibling
+     console.log(td_id);
+     inputArr[0].value = this.href.split("/teacher/")[1]
+     inputArr[1].value = stu.innerHTML 
+     inputArr[2].value = point.innerHTML
+     inputArr[3].value = td_id.innerHTML
+
+     }
+   
+   });
+
+   btn.onclick = function(e){
+     this.style.style = "none"
+   }
+   form.onclick = function(e){
+     e.stopPropagation();
+   }
+   box.onclick = function(e){
+     this.style.display = "none"
+   }
+</script>
+</html>

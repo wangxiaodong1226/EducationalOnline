@@ -1,0 +1,182 @@
+{% extends "./admin/common/base.html" %}
+{% block header%}
+<style>
+      body {
+
+            background-size: cover;
+      }
+
+      .header {
+            width: 100%;
+            height: 20px;
+            background: url('./daohang.png') no-repeat;
+      }
+
+      .center {
+            height: 460px;
+            background-image: url('./timg.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .nei {
+            width: 300px;
+            height: 280px;
+            background-color: rgba(165, 165, 165, 0.582);
+            border-radius: 8px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+
+      input {
+            height: 23px;
+            border: rgb(145, 145, 145);
+            border-radius: 7px;
+            outline: none;
+            line-height: 23px;
+      }
+
+      .text {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+      }
+
+      form {
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+      }
+
+      form div {
+            flex: 1;
+      }
+
+      .message {
+            color: red;
+      }
+
+      .tubiao {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            right: 15px;
+            top: 82px;
+            cursor: pointer;
+      }
+
+      .newtubiao {
+            top: 140px;
+      }
+      .hiddenbox{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            z-index: 99;
+            color: white;
+      }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="header"></div>
+<div class="text">
+      <div>
+            修&nbsp改&nbsp密&nbsp码
+      </div>
+</div>
+<div class="center">
+      <div class="nei">
+            <form action="/admin/motifyPass" method="POST" id="myForm">
+                  {%if type=="0"%}
+
+                  <input type="hidden" name="_id" value="{{name._id}}">
+                  <span>姓名:</span><input type="text" value="{{name.stu_name}}"><br>
+                  <span>旧密码:</span><input type="password" class="oldpass" name="oldpassword">
+                  <span class="glyphicon glyphicon-eye-open tubiao"></span>
+                  <span class="message">{{error}}</span><br>
+                  <span>新密码:</span><input type="password" name="password" class="newpass"> <span
+                        class="glyphicon glyphicon-eye-open tubiao newtubiao"></span><br>
+
+
+
+                  {%elif type=="1"%}
+
+                  <input type="hidden" name="_id" value="{{name._id}}">
+                  <span>姓名:</span><input type="text" value="{{name.te_name}}"><br>
+                  <span>旧密码:</span><input type="password" class="oldpass" name="oldpassword">
+                  <sapn class="glyphicon glyphicon-eye-open tubiao"></sapn>
+                  <span class="message">{{error}}</span><br>
+                  <span>新密码:</span><input type="password" name="password" class="newpass"> <span
+                        class="glyphicon glyphicon-eye-open tubiao newtubiao"></span><br>
+
+
+
+                  {%else%}
+
+                  <input type="hidden" name="_id" value="{{name._id}}">
+                  <span>姓名:</span><input type="text" value="{{name.admin_name}}"><br>
+                  <span>旧密码:</span><input type="password" class="oldpass" name="oldpassword">
+                  <sapn class="glyphicon glyphicon-eye-open tubiao"></sapn>
+                  <span class="message">{{error}}</span><br>
+                  <span>新密码:</span><input type="password" name="password" class="newpass"> <span
+                        class="glyphicon glyphicon-eye-open  tubiao newtubiao"></span><br>
+
+                  {% endif %}
+                  <button>更新</button>
+            </form>
+      </div>
+
+</div>
+{%if correct=="1"%}
+<div class="hiddenbox">
+    <h1>修改成功,请退出登录</h1>
+    <a href="/admin/logout">退出登录</a>
+</div>
+{%endif%}
+
+{%endblock%}
+
+{% block scriptContent %}
+<script>
+      var message = document.getElementsByClassName("message")[0]
+      var oldpass = document.getElementsByClassName("oldpass")[0]
+      var newpass = document.getElementsByClassName("newpass")[0]
+      var tubiao = document.getElementsByClassName("tubiao")[0]
+      var newtubiao = document.getElementsByClassName("newtubiao")[0]
+      console.log(tubiao, oldpass);
+      oldpass.onclick = function () {
+            message.innerHTML = ""
+      }
+      tubiao.onclick = function () {
+            if (oldpass.getAttribute("type") == "password") {
+                  oldpass.setAttribute("type", "text")
+                  tubiao.setAttribute("class", "glyphicon glyphicon-eye-close tubiao")
+            } else {
+                  oldpass.setAttribute("type", "password")
+                  tubiao.setAttribute("class", "glyphicon glyphicon-eye-open tubiao")
+            }
+      }
+      newtubiao.onclick = function () {
+            if (newpass.getAttribute("type") == "password") {
+                  newpass.setAttribute("type", "text")
+                  newtubiao.setAttribute("class", "glyphicon glyphicon-eye-close tubiao newtubiao")
+            } else {
+                  newpass.setAttribute("type", "password")
+                  newtubiao.setAttribute("class", "glyphicon glyphicon-eye-open tubiao newtubiao")
+            }
+      }
+</script>
+
+{% endblock %}

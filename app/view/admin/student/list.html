@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box {
+            height: 760px;
+            text-align: center;
+            background-color: rgb(255, 245, 227);
+        }
+
+        .text {
+            color: rgb(100, 100, 100);
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+        .th1 {
+            background-color: rgb(255, 212, 255);
+            text-align: center;
+        }
+
+        .th2 {
+            background-color: rgb(215, 212, 255);
+            text-align: center;
+        }
+
+        .th3 {
+            background-color: rgb(212, 250, 255);
+            text-align: center;
+        }
+
+        .th4 {
+            background-color: rgb(212, 255, 214);
+            text-align: center;
+        }
+
+        .td1 {
+            background-color: rgb(255, 212, 255);
+        }
+
+        .td2 {
+            background-color: rgb(215, 212, 255);
+
+        }
+
+        .td3 {
+            background-color: rgb(212, 250, 255);
+
+        }
+
+        .td4 {
+            background-color: rgb(212, 255, 214);
+
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="box"><br>
+        <div class="text">学生信息</div><br><br><br><br>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th class="th1">学生姓名</th>
+                    <th class="th2">学生年龄</th>
+                    <th class="th3">学生性别</th>
+                    <th class="th4">等级考试</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td1">{{student.stu_name}}</td>
+                    <td class="td2">{{student.stu_age}}</td>
+                    <td class="td3">{{student.stu_sex}}</td>
+                    <td class="td4">{{student.stu_ckao}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK" charset="UTF-8" />
+    <title>教师界面</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        .header{
+            position: fixed;
+            width: 100%;
+            height: auto;
+            top: 0;
+            z-index: 1;
+        }
+        .logo{
+            width: 100%;
+            height: 128px;
+            background: url(http://jwzx.hrbust.edu.cn/academic/styles/frameV2/img/foot_right.jpg) no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+        }
+        .name{
+            position: absolute;
+            top: 35px;
+            left: 40px;
+            width: auto;
+            height: auto;
+            color: white;
+        }
+        .submenu{
+            position: absolute;
+            width: 200px;
+            height: 50px;
+            top: 30px;
+            right: 0;
+        }
+        .submenu > ul{
+            line-height: 50px;
+            font-size: 16px;
+            width: 200px;
+            height: 50px;
+        }
+        .submenu > ul li{
+            float: left;
+            margin-right: 20px;
+            color: grey;
+        }
+        li> a{
+            color: white;
+        }
+        .user{
+            position: absolute;
+            bottom: 10px;
+            right: 0;
+            color: white;
+            width: 350px;
+            height: 20px;
+        }
+        .user > a{
+            color: white;
+        }
+        .siderbar{
+            position: fixed;
+            top: 128px;
+            width: 300px;
+            height: 548px;
+            border: 1px solid #065A86;
+            z-index: 1;
+            background-color: white;
+        }
+        .siderbar > ul{
+            width: 100%;
+            height: 100%;
+        }
+        .siderbar > ul > li{
+            width: 200px;
+            height: 30px;
+            background-color: #065A86;
+            margin-top: 10px;
+            margin-left: 15px;
+            border-bottom: 3px solid grey;
+            line-height: 30px;
+            text-align: center;
+        }
+        .siderbar > ul > li > a{
+            /* color: rgb(216, 182, 32); */
+            color: white;
+        }
+        iframe{
+         
+            position: relative;
+            width: 78%;
+            height: 674px;
+            left: 300px;
+            top: 130px;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+        .footer{
+            position: fixed;
+            width: 100%;
+            height: 27px;
+            bottom: 0px;
+            background: url(http://jwzx.hrbust.edu.cn/academic/styles/frameV2/img/foot_right.jpg) no-repeat ;
+            background-size: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <div class="name">
+                <h1>大学教务选课系统</h1>
+            </div>
+            <div class="submenu">
+                <ul>
+                    <li><a href="/admin/logout">退出</a></li>
+                    <li>|</li>
+                    <li><a href="/admin/pass" >修改密码</a></li>
+                </ul>
+            </div>
+            <div class="user">
+                您好 <a href="#" > {{info.te_name}}</a> 老师，欢迎登录！
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="siderbar">
+            <ul>
+                <li><a href="/admin/teacher/info" target="iframeMain">个人信息修改</a></li>
+                <li><a href="/admin/teacher/plan" target="iframeMain">教学计划安排</a></li>
+                <li><a href="/admin/level/arrage" target="iframeMain">学生考试安排</a></li>
+                <li><a href="/admin/teacher/text"  target="iframeMain">修改学生分数</a></li>
+                <li><a href="/admin/stuann/add" target="iframeMain">发布公告</a></li>
+            </ul>
+        </div>
+        <!-- <div class="container">
+            <h1>Welcome!</h1>
+        </div> -->
+        <iframe src="/admin/welcome" frameborder="0" name="iframeMain"></iframe>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>

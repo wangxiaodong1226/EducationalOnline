@@ -1,0 +1,38 @@
+{% extends "../common/base.html" %}
+{%block header%}
+ <style>
+  button>a{
+     color: white;
+     text-decoration: none;
+   }
+   a:hover{
+     text-decoration: none;
+     color: red;
+   }
+ </style>
+{% endblock %}
+
+{% block content %}
+  <div>
+    <button type="button" class="btn btn-success"><a href="/admin/level" target="iframeMain">增加考试安排</a></button>
+    <table class="table table-striped">
+      <thead>
+        <th class="text-center" >考试名称</th>
+        <th class="text-center">考试时间</th>
+        <th class="text-center">考场</th>
+      </thead>
+      <tbody>
+        {% for class in classes%}
+        <tr class="text-center">
+          <td>{{class.level_cname}}</td>
+          <td>{{class.level_ctime}}</td>
+          <td>{{class.level_carea}}</td>
+          <td>
+            <a href="/admin/teacher/leveledit?id={{class._id}}">修改</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

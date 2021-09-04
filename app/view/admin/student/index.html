@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>学生界面</title>
+    <link href="../../public/admin/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(153, 153, 153, 0.719);
+        }
+
+        a:hover{
+            text-decoration: none;
+
+        }
+
+        .dad {
+            width: 600px;
+            height: 600px;
+            background-color: rgba(255, 255, 255, 0.54);
+            background-size: cover;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .top {
+            height: 200px;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .bottom {
+            display: flex;
+            height: 200px;
+            width: 600px;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .center {
+            width: 600px;
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .xuanke {
+            height: 180px;
+            width: 180px;
+            background-color: tomato;
+            border-radius: 50%;
+            transition: all 1s;
+        }
+
+        .trans:hover {
+            transform: scale(1.2);
+            background-color: rgb(72, 88, 230);
+        }
+
+        .dengji {
+            height: 180px;
+            width: 180px;
+            background-color: rgb(253, 250, 44);
+            border-radius: 50%;
+            transition: all 1s;
+        }
+
+        .anpai {
+            height: 180px;
+            width: 180px;
+            background-color: rgb(238, 107, 250);
+            border-radius: 50%;
+            transition: all 1s;
+        }
+
+        .gonggao {
+            height: 180px;
+            width: 180px;
+            background-color: rgb(75, 209, 57);
+            border-radius: 50%;
+            transition: all 1s;
+        }
+
+        .xinxi {
+            height: 180px;
+            width: 180px;
+            background-color: rgb(46, 218, 224);
+            border-radius: 50%;
+            transition: all 1s;
+        }
+
+        .x-text {
+            display: flex;
+            height: 180px;
+            width: 180px;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: white;
+            font-weight: 700;
+        }
+
+        .container-fluid {
+            height: 140px;
+            background: url('../../public/admin/img/daohang.png') no-repeat;
+            background-size: 100%;
+            border-radius: 2%;
+            position: relative;
+        }
+
+        .user {
+            position: absolute;
+            bottom: 10px;
+            right: 0;
+            color: white;
+            width: 350px;
+            height: 20px;
+        }
+
+        .name {
+            position: absolute;
+            top: 35px;
+            left: 40px;
+            width: auto;
+            height: auto;
+            color: white;
+            font-weight: 700;
+        }
+
+        .text {
+            color: white !important;
+        }
+        iframe{
+            vertical-align: top;
+            margin-left: 33px;
+            background-color: white;
+            height: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="name">
+                        <h1>大学教务选课系统</h1>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right ">
+                    <li><a class="text" href="/admin/logout">退出</a></li>
+                    <li><a class="text" href="#">|</a></li>
+                    <li><a class="text" href="/admin/pass">修改密码</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="user">
+                    您好！ <a class="text" href="/admin/student/info" target="iframeMain"> {{info.stu_name}}</a class="text"> 同学，欢迎登录！
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="dad">
+        <div class="top">
+            <div class="xuanke trans">
+                <a class="x-text" href="/admin/student/checkclass" target="iframeMain">学生选课</a>
+            </div>
+        </div>
+        <div class="center">
+            <div class="dengji trans">
+                <a class="x-text"  href="http://cet-bm.neea.edu.cn/Home/Index" target="_blank">等级考试报名</a>
+            </div>
+            <div class="anpai trans">
+                <a class="x-text" href="/admin/stuann/arrage" target="iframeMain">考试安排</a>
+            </div>
+            <div class="gonggao trans">
+                <a class="x-text" href="/admin/stuann/list" target="iframeMain">公告</a>
+            </div>
+        </div>
+        <div class="bottom ">
+            <div class="xinxi trans">
+                <a class="x-text" href="/admin/student/info" target="iframeMain">个人信息</a>
+            </div>
+        </div>
+
+    </div>
+    <iframe src="/admin/welcome" frameborder="0" width="865px" name="iframeMain"></iframe>
+
+
+
+</body>
+
+</html>

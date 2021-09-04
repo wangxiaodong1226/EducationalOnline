@@ -1,0 +1,13 @@
+{% extends "./base.html" %}
+{% block header%}
+  <meta http-equiv="Refresh" content="2;URL={{url}}">
+{% endblock %}
+   
+{% block content %}
+  <div class="container">
+    <div class="alert alert-success" role="alert">
+        {{msg}}
+        <p>2秒之后 跳转页面</p>
+    </div>
+  </div>
+{% endblock %}

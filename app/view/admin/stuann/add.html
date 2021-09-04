@@ -1,0 +1,39 @@
+<!-- nunjucjs 模板继承  -->
+
+{% extends "../common/base.html" %}
+
+
+{%block header%}
+    <style>
+        li{
+            list-style: none;
+            margin:7px 5px;
+        }
+        button{
+            margin-left: 60px;
+        }
+        input{
+            margin-left:4px ;
+        }
+        span{
+       
+            text-align: right;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">公告添加</h3>
+    </div>
+    <div class="panel-body">
+        <form action="/admin/stuann/doadd" method="post">
+            <ul>
+                <li><span>公告内容:</span><textarea name="stuann_info" cols="30" rows="10"></textarea> </li>
+            </ul>
+            <button>提交</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

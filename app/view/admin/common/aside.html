@@ -1,0 +1,20 @@
+<div class="aside">
+  <ul class="text-center">
+    {%for access in accessAll%}
+    <li>
+      {% if (access.access_type == 1 and access.checked)  or (access.access_type == 1 and userinfo.ip_super==1) %}
+      <h4>{{access.access_module}}</h4>
+      {%endif%}
+      <ul>
+        {%for accessItem in access.access_all%}
+        {% if (accessItem.access_type == 2 and accessItem.checked)  or (accessItem.access_type == 2 and userinfo.ip_super==1) %}
+        <li class="list-group-item"><a href="{{accessItem.access_url}}"
+            target="iframeMain">{{accessItem.access_action}}</a></li>
+        {%endif%}
+        {%endfor%}
+
+      </ul>
+    </li>
+    {%endfor%}
+  </ul>
+</div>
